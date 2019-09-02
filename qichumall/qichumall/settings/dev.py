@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 应用
     # 'qichumall.apps.users.apps.UsersConfig', 在设置中加入apps作为python的导包路径，可简写如下
-    # 'users.apps.UsersConfig',
+    'users.apps.UsersConfig',
     # 'rest_framework',
 ]
 
@@ -126,6 +126,8 @@ CACHES = {  # 默认
     }
 }
 
+# 指定用户模型类（自定义添加了手机号）
+AUTH_USER_MODEL = 'users.User'
 
 # 日志
 LOGGING = {
