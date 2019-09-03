@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     # 应用
     # 'qichumall.apps.users.apps.UsersConfig', 在设置中加入apps作为python的导包路径，可简写如下
     'users.apps.UsersConfig',
-    # 'rest_framework',
+    'rest_framework',
+    'verifications.apps.VerificationsConfig',
 ]
 
 MIDDLEWARE = [
